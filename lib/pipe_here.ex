@@ -26,7 +26,7 @@ defmodule PipeHere do
     Macro.pipe(a, b, idx)
   end
 
-  defp call_with_placeholder?({a, l, args = [_ | _]}) do
+  defp call_with_placeholder?({_, _, args = [_ | _]}) do
     Enum.any?(args, &placeholder?/1)
   end
   defp call_with_placeholder?(_), do: false
