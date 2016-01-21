@@ -6,4 +6,8 @@ An Elixir macro for easily piping arguments at any position.
 
 ```elixir
 :world |> say(:hello, _) |> pipe_here
+
+# expands to
+
+say(:hello, :world)
 ```
