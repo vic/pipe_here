@@ -1,4 +1,4 @@
-# PipeHere
+# PipeHere <a href="https://travis-ci.org/vic/pipe_here"><img src="https://travis-ci.org/vic/pipe_here.svg"></a>
 
 An Elixir macro for easily piping arguments at any position.
 
