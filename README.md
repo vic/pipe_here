@@ -44,6 +44,6 @@ every member of the pipe can at most have just one `_` placeholder.
 
 ```elixir
 def deps do
-  [{:pipe_here, "~> 0.0.1"}]
+  [{:pipe_here, "~> 1.0.0"}]
 end
 ```

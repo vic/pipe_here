@@ -95,7 +95,7 @@ defmodule PipeHereTest do
     assert_expands_to a, b, __ENV__
   end
 
-  test "retmote call with ref and placeholder expands to pipe" do
+  test "remote call with ref and placeholder expands to pipe" do
     a = quote do
       a |> M.b(&x/1, _) |> pipe_here
     end
@@ -104,4 +104,15 @@ defmodule PipeHereTest do
     end
     assert_expands_to a, b, __ENV__
   end
+
+  test "mixed with non-placeholder calls" do
+    a = quote do
+      a |> b(1, _) |> c |> d(2, _, 3) |> e.(4) |> pipe_here
+    end
+    b = quote do
+      e.(d(2, c(b(1, a)) ,3), 4)
+    end
+    assert_expands_to a, b, __ENV__
+  end
+
 end

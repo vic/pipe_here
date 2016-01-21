@@ -21,6 +21,7 @@ defmodule PipeHere do
       {{a, l, List.delete_at(args, idx)}, idx}
     end
   end
+  defp rewrite_call(call), do: {call, 0}
 
   defp pipe({b, idx}, a) do
     Macro.pipe(a, b, idx)
