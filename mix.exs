@@ -5,6 +5,8 @@ defmodule PipeHere.Mixfile do
     [app: :pipe_here,
      version: "0.0.1",
      elixir: "~> 1.2",
+     description: description,
+     package: package,
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps]
@@ -15,6 +17,19 @@ defmodule PipeHere.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     [applications: [:logger]]
+  end
+
+  def description do
+  """
+  An Elixir macro for easily piping arguments at any position.
+  """
+  end
+
+  defp package do
+    [files: ["lib", "mix.exs", "README*"],
+     maintainers: ["Victor Borja"],
+     licenses: ["Apache 2.0"],
+     links: %{"GitHub" => "https://github.com/vic/pipe_here"}]
   end
 
   # Dependencies can be Hex packages:
