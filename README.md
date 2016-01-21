@@ -33,7 +33,7 @@ Note that while you can do stuff like:
 a |> b(1, _) |> c(_, 2) |> pipe_here
 ```
 
-every member of the pipe can at most have a one `_` placeholder.
+every member of the pipe can at most have just one `_` placeholder.
 
 
 ## Installation
