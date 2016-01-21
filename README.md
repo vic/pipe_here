@@ -1,4 +1,4 @@
-# PipeHere
+# PipeHere <a href="https://travis-ci.org/vic/pipe_here"><img src="https://travis-ci.org/vic/pipe_here.svg"></a>
 
 An Elixir macro for easily piping arguments at any position.
 
@@ -30,10 +30,10 @@ The `pipe_here` macro can also be used at the end of a pipe:
 Note that while you can do stuff like:
 
 ```elixir
-a |> b(1, _) |> c(_, 2) |> pipe_here
+a |> b(1, _) |> c |> d(2, _, 3) |> pipe_here
 ```
 
-every member of the pipe can at most have a one `_` placeholder.
+every member of the pipe can at most have just one `_` placeholder.
 
 
 ## Installation
