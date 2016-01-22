@@ -47,3 +47,11 @@ def deps do
   [{:pipe_here, "~> 1.0.0"}]
 end
 ```
+
+##### マクロス Makurosu
+
+[Elixir macros,] The things I do for beautiful code
+― George Martin, Game of Thrones
+
+[#myelixirstatus](https://twitter.com/hashtag/myelixirstatus?src=hash)
+[#FridayLiterally](http://futurice.com/blog/friday-literally)
