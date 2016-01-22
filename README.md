@@ -48,9 +48,13 @@ def deps do
 end
 ```
 
+## Is it any good?
+
+[Yes](https://news.ycombinator.com/item?id=3067434)
+
 ##### マクロス Makurosu
 
-[Elixir macros,] The things I do for beautiful code
+[[Elixir macros](https://github.com/h4cc/awesome-elixir#macros),] The things I do for beautiful code
 ― George Martin, Game of Thrones
 
 [#myelixirstatus](https://twitter.com/hashtag/myelixirstatus?src=hash)
