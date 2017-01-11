@@ -5,9 +5,6 @@ defmodule PipeHereTest do
   import PipeHere.Assertions
   import PipeHere
 
-  # Silence "warning: unused import PipeHere"
-  pipe_here(nil)
-
   test "non-piped term expands to itself" do
     a = quote do
       a |> pipe_here
@@ -16,6 +13,7 @@ defmodule PipeHereTest do
       a
     end
     assert_expands_to a, b, __ENV__
+    assert :foo == :foo |> pipe_here
   end
 
   test "piped term expands to itself" do
