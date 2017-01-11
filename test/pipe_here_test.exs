@@ -5,6 +5,9 @@ defmodule PipeHereTest do
   import PipeHere.Assertions
   import PipeHere
 
+  # Silence "warning: unused import PipeHere"
+  pipe_here(nil)
+
   test "non-piped term expands to itself" do
     a = quote do
       a |> pipe_here
