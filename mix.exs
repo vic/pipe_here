@@ -42,6 +42,6 @@ defmodule PipeHere.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:mix_test_watch, "~> 0.2.5", only: :dev}]
+    [{:ex_doc, ">= 0.0.0", only: :dev}]
   end
 end
